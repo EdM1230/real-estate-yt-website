@@ -120,6 +120,59 @@ nav {
     display: none;
 }
 
+.hide {
+    display: none !important;
+}
+
+.mobile-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    z-index: 10;
+}
+
+.close-btn {
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+}
+
+.close-btn button {
+    background: none;
+    border: none;
+}
+
+.close-btn img {
+    width: 4rem;
+}
+
+.mobile-menu ul {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    justify-content: center;
+    align-items: center; 
+    gap: 40px;
+    width: 100%; 
+    padding: 0; 
+}
+
+.mobile-navbar-items {
+    font-family: var(--font-family);
+    font-size: 1.5rem;
+}
+
 @media (max-width: 640px) {
 
     nav {
@@ -168,7 +221,7 @@ nav {
     
     .hamburger-menu {
         display: block;
-    }    
+    }
 }
 
 /* Desktop Nav Bar */
